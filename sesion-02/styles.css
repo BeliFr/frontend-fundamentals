@@ -1,0 +1,36 @@
+h1{
+    color: rgb(0, 26, 255);
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+li{
+    display: inline;
+    padding: 50px;
+    font-size: larger;
+}
+
+ul{
+    display: inline;
+    
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    width: 10%;
+}
+
+nav{    
+    margin: 12px;
+    width: 75%;
+}
+
+#boton{
+    text-align: right;
+    display: inline;
+    width: 15%;
+}
