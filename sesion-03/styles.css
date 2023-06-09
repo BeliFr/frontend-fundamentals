@@ -2,20 +2,28 @@ h1{
     color: rgb(0, 26, 255);
 }
 
-header{
+.cabecera{
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    right: 0%;
     display: flex;
     align-items: center;
+    width: 100%;
 }
+
+.contenidoSuperior{
+    
+    position: static;
+}
+
 li{
     display: inline;
     padding: 50px;
     font-size: larger;
 }
 
-ul{
-    display: inline;
-    
-}
+
 
 a{
     display: inline-block;
@@ -52,4 +60,5 @@ nav{
 #parrafoDerecho{
     text-align: justify;
 }
+
 

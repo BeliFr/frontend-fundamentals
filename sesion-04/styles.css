@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+.fixed-header{
+    position: fixed;
+    height: 100px;
+    background-color: rgb(100, 48, 48); 
+    width: 100%;
+    top: 0;
+
+}
+
+.contenido{
+   height: 2000px;
+   background-color: darkcyan;
+}
+
+.car{
+    height: 200px;
+    width: 200px;   
+}
+
+.car1{
+    background-color: blue;
+}
+
+.car2{
+    background-color: red;
+}
+
+.car3{
+    background-color: yellow;
+}
+
+.car4{
+    background-color: green;
+}
+
+.container{
+    background-color: aqua;
+    margin-top: 115px; 
+    margin-top: 0px;
+    display: grid;
+/*     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px; */
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.features{
+    background-color: aquamarine;
+    margin: 115px;
+}
