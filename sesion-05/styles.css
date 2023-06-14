@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+.fixed-header{
+    position: fixed;
+    height: 100px;
+    background-color: rgb(100, 48, 48); 
+    width: 100%;
+    top: 0;
+
+}
+
+.contenido{
+   height: 2000px;
+   background-color: darkcyan;
+}
+
+.car{
+    height: 300px;
+    width: 300px;   
+}
+
+.car1{
+    background-color: blue;
+}
+
+.car2{
+    background-color: red;
+}
+
+.car3{
+    background-color: yellow;
+}
+
+.car4{
+    background-color: green;
+}
+
+.car11 {
+    background-color: blue;
+    order: 2;
+}
+.car21 {
+    background-color: red;
+    order: 3;
+}
+.car31 {
+    background-color: yellow;
+    order: 2;
+}
+.car41 {
+    background-color: green;
+    order: 3;
+}
+
+.features{
+    background-color: aqua;
+    margin-top: 115px; 
+    
+    display: grid;
+/*     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px; */
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    
+}
+
+.features2 {
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 250px 300px; */
+    /* filas x Columnas */
+}
+
+
+
+@media (max-width : 575px){
+    body{
+        background-color: aquamarine
+    }
+    .fixed-header{
+        display: none;
+    }
+    
+    .features{
+        margin-top: 20px;
+        grid-template: repeat(4 , 1fr) / repeat(1, 1fr);
+    }
+    .features2{
+        grid-template: repeat(4 , 1fr) / repeat(1, 1fr);
+    }
+}
+
+

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+}
+
+.encabezado{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(2, 20, 20);
+    top: 0;
+    left: 0;
+}
+
+.principal{
+    background-color: lightgreen;
+    height: 1000px;
+    margin-top: 105px;
+}
