@@ -1,0 +1,60 @@
+$size: 6px*100;
+$azul: #04a3f9;
+$verde: #025157;
+$ancho: $size/2;
+
+@mixin repetido($tamano,$color){
+    height: $tamano;
+    width: $tamano;
+    background-color: $color;
+}
+
+.hola{
+    background-color: $verde;
+    font-size: large;
+} 
+
+
+.blog{
+    /* height: $size;
+    width: $ancho;
+    background-color: $azul; */
+
+    @include repetido ($size,$azul);
+
+    @if ($size >= 400){
+        border: 10px solid;
+        border-color: $azul;
+    }
+}
+
+.blog2{
+    /* height: 300px;
+    width: 300px;
+    background-color: beige; */
+    @include repetido(300px,beige);
+}
+
+
+
+
+div{
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    p{
+        color: red;
+        font-size: larger;
+    }
+}
+
+@media (orientation:landscape){
+    .blog{
+        background-color: $verde;
+    }
+}
+
+
