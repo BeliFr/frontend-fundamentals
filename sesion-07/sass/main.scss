@@ -2,6 +2,8 @@ $size: 6px*100;
 $azul: #04a3f9;
 $verde: #025157;
 $ancho: $size/2;
+ 
+ @use('global') as *;
 
 @mixin repetido($tamano,$color){
     height: $tamano;

@@ -1,0 +1,21 @@
+.cuadrado{
+    height: 200px;
+    width: 200px;
+    background: #aaa;
+    position: relative;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+
+@keyframes animacion {
+    0%{background: #aaa;left: 0;top: 0}
+    25%{background: green;left: 300px;top: 0}
+    50%{background: red;left: 300px;top: 300px}
+    75%{background: yellow;left: 0;top: 300px}
+    100%{background: pink;left: 0;top: 0}
+}
