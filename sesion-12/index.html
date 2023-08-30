@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFuncion(param1){
+            return param1*2;
+        }
+
+        console.log(myFuncion(25));
+
+
+        function calculaEdad (birthYear){
+            const age = 2023 - birthYear;
+            return age;
+        }
+
+        const edadAlejandra = calculaEdad(1998)
+        const edadOscar = calculaEdad(1998)
+        const edadSamuel = calculaEdad(1998)
+
+        console.log(edadAlejandra)
+        console.log(edadOscar)
+        console.log(edadSamuel)
+
+        function yearsUntilRetirement( year, name){
+            const age = calculaEdad(year)
+            const retirement = 65 - age
+            console.log(`${name} se retirará en ${retirement} años`)
+        }
+
+        yearsUntilRetirement(1998,"Alejandra")
+        yearsUntilRetirement(1984,"Juan")
+        yearsUntilRetirement(1999,"Samuel")
+
+        function potencia(base,exponente){
+            var resultado = base;
+            for(let i=1;i<exponente;i++){
+                resultado *= base;
+            }
+            return resultado;
+        }
+
+        function power(base,exponente){
+            return base**exponente
+        }
+
+        console.log(potencia(2,8));
+        console.log(power(2,8));
+
+        const aQueTeDedicas = function (job, name){
+            switch (job){
+                case 'desarrollador':
+                    return `${name} desarrolla aplicaciones web`
+                case 'diseñador':
+                    return `${name} diseña páginas chidas`
+                default:
+                    return `${name} hace otra cosa`
+            }
+        }
+
+        console.log(aQueTeDedicas('desarrollador','Juan'));
+
+        const arr = [function(a,b){return a+b}]
+
+        //n! = n*(n-1)*...*1
+        //0! = 1
+        //n! = n * (n-1)!
+        //4! = 4 * 3!
+        //4! = 4 * 3 * 2!
+
+        function factorial2(n){
+            if (n === 0) 
+                return 1;
+            return n * factorial2(n-1);
+        }
+
+        console.log(factorial2(5));
+        const factorial = function fac (n){
+            if(n===0)
+                return 1
+            return n * fac(n-1)   
+        }
+
+        console.log(factorial(5));
+
+    </script>
+</body>
+</html>

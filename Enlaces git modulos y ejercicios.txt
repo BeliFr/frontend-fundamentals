@@ -1,0 +1,10 @@
+Módulo 2
+https://github.com/beduExpert/Programacion-JavaScript-12sesiones-2021/tree/main
+
+Módulo 3
+https://github.com/yorch-el-profe/santander-backend-fundamentals
+
+
+Cuenta Mongo Atlas
+User: jujeroabutl
+Pass: Sd2rUyhxo97x2tEB

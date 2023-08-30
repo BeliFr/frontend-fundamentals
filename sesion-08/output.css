@@ -19,10 +19,24 @@ h3 {
   transition-duration: 1s;
   transition-timing-function: ease-in-out; 
   transition-delay: 1s;
-  */ }
+  */ 
+}
 
 .titulo3:hover {
   color: #2ada39;
   font-size: 45px; }
+
+
+.texto-modificado{
+    color: #2ada39;
+}
+
+.segunda{
+  color: blue;
+}
+
+.tercera{
+  color: yellow;
+}
 
 /*# sourceMappingURL=output.css.map */
