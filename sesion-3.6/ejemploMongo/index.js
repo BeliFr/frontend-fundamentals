@@ -39,8 +39,10 @@ const UserSchema = new mongoose.Schema({
 	age: { type: Number, min: 18 },
 });
 
+
 //Crear un modelo a partir del schema
 //Ya se puede interactuar a la BD
+//Se crea un modelo a partir del schema
 const UserModel = mongoose.model('users',UserSchema);
 
 //Creación de la API
@@ -77,3 +79,5 @@ app.get("/getUser/:id", async function (request, response) {
 });
 
 app.listen(8080,()=>console.log("Escuchando puerto 8080"));
+
+

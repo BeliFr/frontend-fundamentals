@@ -17,6 +17,13 @@ INSERT INTO accounts Values(2,'1298335722376753',1000);
 
 --Transaction: Es una o más instrucciones de SQL que se ejecutan en una sola operación.
 --Las transacciones siguen el comportamiento de ACID
+
+-- Las base de datos relacionales se basan en ACID
+-- Atomicity: En una transacción se ejecutan todas las instrucciones o no se ejecuta ninguna
+-- Consistency: Los datos siempre están actualizados
+-- Isolation: Las transacciones no se afectan entre sí
+-- Durability: Las transacciones siempre terminan en un estado válido
+
 BEGIN TRANSACTION; --a partir de este momento se define la transacción
 --Es decir, todas las instrucciones siguientes formarán parte de la transacción
 SELECT * FROM accounts WHERE id = 1;
@@ -35,12 +42,6 @@ ROLLBACK;
 
 --Para confirmar los cambios se utiliza
 COMMIT;
-
--- Las base de datos relacionales se basan en ACID
--- Atomicity: En una transacción se ejecutan todas las instrucciones o no se ejecuta ninguna
--- Consistency: Los datos siempre están actualizados
--- Isolation: Las transacciones no se afectan entre sí
--- Durability: Las transacciones siempre terminan en un estado válido
 
 
 -- Las bases de datos no sql se basan en BASE

@@ -1,0 +1,45 @@
+##Instalación de paquetes con npm
+
+##Creación de un proyecto 
+npm init -y
+
+##nodemon 
+npm install nodemon
+##nodemon devDependencies
+npm install --save-dev nodemon
+
+##express
+npm install express
+
+##dotenv
+npm install dotenv --save
+
+##mySql
+npm install --save mysql2
+
+##express-joi-validation joi
+npm i express-joi-validation joi --save
+
+##passport
+npm install passport
+
+##passport jwt
+npm install passport-jwt
+
+##jsonwebtoken
+npm install jsonwebtoken
+
+##sequelize
+npm install --save sequelize
+
+##sqlite 3
+npm install --save sqlite3
+
+##node gyp
+npm install -g node-gyp
+
+
+
+
+
+

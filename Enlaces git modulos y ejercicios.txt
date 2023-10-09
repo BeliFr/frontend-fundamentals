@@ -1,10 +1,27 @@
+
+
 Módulo 2
 https://github.com/beduExpert/Programacion-JavaScript-12sesiones-2021/tree/main
 
-Módulo 3
+Módulo 3 Teoría y ejercicios BEDU
+https://github.com/beduExpert/Backend-Fundamentals-2021/tree/main
+
+Módulo 3 Ejercicios de las clases 
 https://github.com/yorch-el-profe/santander-backend-fundamentals
+
+Módulo 4 Ejercicios de la clase
+https://github.com/yorch-el-profe/santander-nodejs-2023
+
+##Comandos para instalar ORM en node
+SQLite: npm install sequelize sqlite3
+MySQL: npm install sequelize mysql2
 
 
 Cuenta Mongo Atlas
 User: jujeroabutl
 Pass: Sd2rUyhxo97x2tEB
+
+Patrones de diseño
+https://refactoring.guru/es/design-patterns
+
+https://chat.whatsapp.com/LLGBJhZgw5YAjNBW7Dcswx
