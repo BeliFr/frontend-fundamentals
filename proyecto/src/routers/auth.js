@@ -7,3 +7,4 @@ const { loginSchema } = require("../validations/user");
 router.post("/login", validator.body(loginSchema), login);
 
 module.exports = router;
+

@@ -10,7 +10,7 @@ exports.createUser = function (request, response) {
 */
 
 exports.createUser = async function (request, response) {
-	const { firstname, lastname, email, password } = request.body;
-	const user = await insert({ firstname,lastname,email,password });
+	const { username, firstname, lastname, email, password } = request.body;
+	const user = await insert({ username,firstname,lastname,email,password });
 	response.status(201).json(user);
 };

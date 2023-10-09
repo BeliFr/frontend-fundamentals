@@ -7,3 +7,4 @@ const validator = require("../middlewares/validator");
 router.post("/users", validator.body(createUserSchema), createUser);
 
 module.exports = router;
+

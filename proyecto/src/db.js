@@ -19,3 +19,5 @@ exports.initDatabase = async function () {
 	await connect();
 	await sync();
 };
+
+
