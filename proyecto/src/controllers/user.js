@@ -11,6 +11,6 @@ exports.createUser = function (request, response) {
 
 exports.createUser = async function (request, response) {
 	const { username, firstname, lastname, email, password } = request.body;
-	const user = await insert({ username,firstname,lastname,email,password });
+	const user = await insert({ username, firstname, lastname, email, password });
 	response.status(201).json(user);
 };

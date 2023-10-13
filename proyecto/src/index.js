@@ -10,7 +10,8 @@ app.use(express.json());
 
 const userRouter = require("./routers/user");
 const authRouter = require("./routers/auth");
-
+const expenseRouter = require("./routers/expense");
+const categoryRouter = require("./routers/category");
 
 const validationError = require("./middlewares/validation-error");
 const unknownError = require("./middlewares/unknown-error");
@@ -19,6 +20,8 @@ const unknownError = require("./middlewares/unknown-error");
 
 app.use(userRouter);
 app.use(authRouter);
+app.use(categoryRouter);
+app.use(expenseRouter);
 
 // Manejo de errores
 app.use(validationError);

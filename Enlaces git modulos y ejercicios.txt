@@ -12,6 +12,12 @@ https://github.com/yorch-el-profe/santander-backend-fundamentals
 Módulo 4 Ejercicios de la clase
 https://github.com/yorch-el-profe/santander-nodejs-2023
 
+Repo proyecto clase
+https://github.com/yorch-el-profe/santander-nodejs-2023-demo
+
+Repo demo todo
+https://github.com/yorch-el-profe/todo-api-2023-demo
+
 ##Comandos para instalar ORM en node
 SQLite: npm install sequelize sqlite3
 MySQL: npm install sequelize mysql2

@@ -2,7 +2,7 @@ const { findByUsername } = require("../services/user");
 const jwt = require("jsonwebtoken");
 
 exports.login = async function (request, response) {
-	const { username, password } = request.body;
+	const { username, password } = request.body; 
 
 	const user = await findByUsername(username);
 

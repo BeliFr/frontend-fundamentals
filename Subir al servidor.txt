@@ -1,0 +1,37 @@
+1. Actualizar servidor con apt update
+2. Instalar node js en el servidor
+	-Buscar cómo instalarlo
+	-Dependiendo de la versión
+	-https://abhijeetjaiswal.in/blog/how-to-install-nodejs-on-ubuntu-23-04/
+3. Clonar el repositorio
+	- Generar un key con ssh ssh-keygen -t rsa -b 4096 -C "Servidor Digital Ocean"
+	- LLave generada en git hub "deploy keys"
+	- En settings se agrega la llave (copiar desde ssh)
+	- ir a la pestaña del git a la página de git
+	- clonar en el servidor con git clone y el enlace obtenido
+4. Ejecutar el código
+	- instalar las dependencias solo las dependencias de producción
+	- npm install --production
+	- instalar pm2 para monitorear los procesos
+	- npm install -g pm2
+	- crear el archivo de ambiente, el .env
+	- arrancar el servidor
+	- pm2 start src/index.js --name "api bedu"
+
+4. Cambios manuales
+	- Si se hace un cambio, se hace un git pull origin master
+	- Se reinicia pm2
+
+5. Actualizaciones automáticas
+	- Ejecutar dentro de la carpeta ssh
+	- ssh-keygen -t rsa -b 4096 -C "Deploy Github Actions"
+	
+	- Se puede tener una llave pública para acceder (append)
+	- cat github-actions.pub >> authorized_keys
+	- 
+	- Si se usa nvm para instalar node
+		- export NVM_DIR=~/.nvm 
+		- source ~/.nvm/nvm.sh
+		https://stackoverflow.com/questions/62863080/github-actions-err-bash-line-3-npm-command-not-found
+
+5. Para cerrar puertos se puede usar UFW 
