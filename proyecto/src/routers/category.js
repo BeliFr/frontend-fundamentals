@@ -15,7 +15,7 @@ const {
 	paramsSchema,
 } = require("../validations/category");
 
-router.get("/categories", getCategories);
+router.get("/categories",jwtValidator, getCategories);
 router.get("/categories/:id", validator.params(paramsSchema), getCategory);
 router.post(
 	"/categories",

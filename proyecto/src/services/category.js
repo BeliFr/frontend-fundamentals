@@ -1,7 +1,11 @@
 const Category = require("../models/category");
 
-exports.findAll = function () {
-	return Category.findAll();
+exports.findAll = function (userId) {
+	return Category.findAll({
+		where: {
+			userId,
+		},
+	});
 };
 
 exports.findById = function (id) {

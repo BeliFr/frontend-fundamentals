@@ -7,7 +7,8 @@ const {
 } = require("../services/category");
 
 exports.getCategories = async function (request, response) {
-	const categories = await findAll();
+	const { id } = request.user;
+	const categories = await findAll(id);
 	response.status(200).json(categories);
 };
 
