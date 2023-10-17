@@ -8,7 +8,8 @@ const {
 
 exports.getExpensesByUser = async function (request, response) {
 	const { id } = request.user;
-	//Se buscan todos los gastos del usuario, por ello se envíe el id del usuario
+	//Se buscan todos los gastos del usuario, para ello se envía
+	//el id del usuario y busca solo los registros de élx|
 	const expenses = await findAllbyUser(id);
 	response.status(200).json(expenses);
 };
