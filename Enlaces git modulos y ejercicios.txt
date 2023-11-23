@@ -1,4 +1,26 @@
+#Formularios React
+https://www.copycat.dev/blog/material-ui-form/
 
+##Servidor para deploy
+https://railway.app/
+
+##Registro de prototype day
+https://docs.google.com/forms/d/e/1FAIpQLSdUAoYSbvYP7q3J-iIbRY3DpE-YQP9UNdB1nJdsyjnJe-8Fsw/viewform
+
+#AWT en React
+https://www.bezkoder.com/react-hooks-jwt-auth/
+https://medium.com/@giwon.yi339/how-to-store-jwt-token-in-local-storage-for-react-b0957686b75c
+https://semgrep.dev/r?q=typescript.react.security.audit.react-jwt-in-localstorage.react-jwt-in-localstorage
+
+
+##Router en react
+https://medium.com/front-end-weekly/choosing-a-router-in-react-apps-85ae72fe9d78
+
+Convertir a PWA
+https://dev.to/bhendi/turn-your-react-vite-app-into-a-pwa-3lpg
+
+Herramientas
+https://roadmap.sh/roadmaps
 
 Módulo 2
 https://github.com/beduExpert/Programacion-JavaScript-12sesiones-2021/tree/main
@@ -30,4 +52,8 @@ Pass: Sd2rUyhxo97x2tEB
 Patrones de diseño
 https://refactoring.guru/es/design-patterns
 
-https://chat.whatsapp.com/LLGBJhZgw5YAjNBW7Dcswx
+https://chat.whatsapp.com/LLGBJhZgw5YAjNBW7Dcswxg
+
+##Video autenticación
+https://youtu.be/ztG3VGGK-94?si=gfw9-hozP7qV2JXy
+

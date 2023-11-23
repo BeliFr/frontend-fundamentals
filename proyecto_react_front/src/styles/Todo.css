@@ -1,0 +1,14 @@
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.list-item {
+  margin: 0 15px;
+}
+
+.dim-completed {
+  opacity: 0.4;
+}
