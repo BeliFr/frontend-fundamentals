@@ -93,40 +93,44 @@ const AddExpense = ()=>{
 
     return(
         <>
-            <h1>Registra tu gasto</h1>
+        <div
+        className="bg-white shadow-lg rounded p-8 m-4 max-w-2xl mx-auto h-auto"
+        style={{
+          height: "120%",
+          boxShadow: "0px 4px 8px rgba(17, 193, 243, 0.2)",
+        }}
+      >
+            <h1 style={{ fontSize: "34px", marginBottom: "16px" }}>Registra tu gasto</h1>
             <form onSubmit={handleSubmit} action={<Link to="/Expenses" />} method='POST'>
                 <TextField
                     type="date"
                     variant='outlined'
-                    color='secondary'
                     
                     onChange={e => setDate(e.target.value)}
                     value={date}
                     fullWidth
                     required
-                    sx={{mb: 4}}
+                    sx={{ mb: 4, borderColor: "#5E62D1" }}
                 />
                 <TextField
                     type="text"
                     variant='outlined'
-                    color='secondary'
                     label="Descripción"
                     onChange={e => setDescription(e.target.value)}
                     value={description}
                     fullWidth
                     required
-                    sx={{mb: 4}}
+                    sx={{ mb: 4, borderColor: "#5E62D1" }}
                 />
                 <TextField
                     type="text"
                     variant='outlined'
-                    color='secondary'
                     label="Cantidad"
                     onChange={e => setAmount(e.target.value)}
                     value={amount}
                     fullWidth
                     required
-                    sx={{mb: 4}}
+                    sx={{ mb: 4, borderColor: "#5E62D1" }}
                 />
                 
                 <FormControl fullWidth>
@@ -138,7 +142,7 @@ const AddExpense = ()=>{
                         autoWidth
                         label="Metodo de pago"
                         onChange={e => setPaymentMethod(e.target.value)}
-                        sx={{mb: 4}}
+                        sx={{ mb: 4, borderColor: "#5E62D1" }}
                     >
                         <MenuItem value="">
                             <em>Selecciona la forma de pago</em>
@@ -159,7 +163,7 @@ const AddExpense = ()=>{
                         autoWidth
                         label="Metodo de pago"
                         onChange={e => setCategory(e.target.value)}
-                        sx={{mb: 4}}
+                        sx={{ mb: 4, borderColor: "#5E62D1" }}
                     >
                     <MenuItem value="">
                         <em>Selecciona la categoría</em>
@@ -170,8 +174,18 @@ const AddExpense = ()=>{
                     
                              
                 </FormControl>
-                <Button variant="outlined" color="secondary" type="submit" sx={{mb: 4}}>Registrar</Button>            
-            </form>            
+                <Button variant="outlined" 
+                style={{
+              backgroundColor: "#5E62D1",
+              width: "50%",
+              color: "white",
+              border: "none",
+              borderRadius: "20px",
+              fontWeight: "bold",
+              background: " #5E62D1",
+            }} type="submit" sx={{mb: 4}}>Registrar</Button>            
+            </form>  
+            </div>          
         </>
     );
 }

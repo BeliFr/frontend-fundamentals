@@ -64,8 +64,15 @@ const Login = () => {
      
     return ( 
         <>
+         <div
+        className="bg-white shadow-lg rounded p-8 m-4 max-w-2xl mx-auto h-auto"
+        style={{
+          height: "120%",
+          boxShadow: "0px 4px 8px rgba(17, 193, 243, 0.2)",
+        }}
+      >
         <form autoComplete="off" onSubmit={handleSubmit}>
-            <h2>Inicia sesión</h2>
+            <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Inicia sesión</h2>
                 <TextField 
                     label="Username"
                     onChange={e => setUserName(e.target.value)}
@@ -90,10 +97,20 @@ const Login = () => {
                     fullWidth
                     sx={{mb: 3}}
                  />
-                 <Button variant="outlined" color="secondary" type="submit">Iniciar</Button>
+                 <Button variant="outlined" style={{
+              backgroundColor: "#5E62D1",
+              width: "50%",
+              color: "white",
+              border: "none",
+              borderRadius: "20px",
+              fontWeight: "bold",
+              background: " #5E62D1",
+            }} type="submit">Iniciar</Button>
              
         </form>
+        </div>
         <small>Requieres una cuenta? <Link to="/">Regístrate aquí</Link></small>
+        
         </>
      );
 }

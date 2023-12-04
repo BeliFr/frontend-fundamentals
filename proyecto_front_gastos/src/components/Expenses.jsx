@@ -42,8 +42,15 @@ const invoiceTotal = invoiceTaxes + invoiceSubtotal;
 const expenses = ()=>{
     return(
         <>
-            <h1>Listado de gastos del usuario</h1>
-            <small>Quieres registrar un nuevo gasto? <Link to="/add_expense">Registra aquí</Link></small>
+            <div
+        className="bg-white shadow-lg rounded p-8 m-4 max-w-2xl mx-auto h-auto"
+        style={{
+          height: "120%",
+          boxShadow: "0px 4px 8px rgba(17, 193, 243, 0.2)",
+        }}
+      >
+            <h1 style={{ fontSize: "32px", marginBottom: "16px" }}>Listado de gastos del usuario</h1>
+            <small >Quieres registrar un nuevo gasto? <Link to="/add_expense">Registra aquí</Link></small>
             <TableContainer component={Paper}>
             <Table sx={{ minWidth: 700 }} aria-label="spanning table">
                 <TableHead>
@@ -82,6 +89,7 @@ const expenses = ()=>{
                 </TableBody>
             </Table>
             </TableContainer>
+            </div>
         </>
     );
 }

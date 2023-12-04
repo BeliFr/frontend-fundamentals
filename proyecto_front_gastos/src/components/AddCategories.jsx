@@ -38,21 +38,36 @@ const Categories = ()=>{
 
     return(
         <>
+        <div
+        className="bg-white shadow-lg rounded p-8 m-4 max-w-2xl mx-auto h-auto"
+        style={{
+          height: "120%",
+          boxShadow: "0px 4px 8px rgba(17, 193, 243, 0.2)",
+        }}
+      > 
             <form autoComplete="off" onSubmit={handleSubmit}>
-            <h1>Registra nueva categoría</h1>
+            <h2 style={{ fontSize: "30px", marginBottom: "16px" }}>Registra nueva categoría</h2>
                 <TextField 
                     label="Nombre de la categoría"
                     onChange={e => setName(e.target.value)}
                     required
                     variant="outlined"
-                    color="secondary"
+                    sx={{ mb: 4, borderColor: "#5E62D1" }}
                     type="text"
-                    sx={{mb: 3}}
                     fullWidth
                     value={name}
                  />
-                 <Button variant="outlined" color="secondary" type="submit">Registrar</Button>
+                 <Button variant="outlined" style={{
+              backgroundColor: "#5E62D1",
+              width: "50%",
+              color: "white",
+              border: "none",
+              borderRadius: "20px",
+              fontWeight: "bold",
+              background: " #5E62D1",
+            }} type="submit">Registrar</Button>
         </form>
+        </div>
         </>
     );
 }
